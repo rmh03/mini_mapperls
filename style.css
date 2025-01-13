@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8f1e5, #f1e0c6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff8e1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a3c2a;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a3c2a;
+    margin-bottom: 15px; 
+    font-size: 24px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+p {
+    color: #8d6e63;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background-color: #d7b49c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0. 2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #c69c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%;
+}
+
+.form.active {
+    display: block;
+    opacity: 1;
+}
+
+.hidden {
+ display: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d7b49c;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #6a4f4b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 79, 75, 0.5);
+}
+
+input::placeholder {
+    color: #8d6e63;
+}
+
+.switch-option {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #8d6e63;
+}
+
+.switch-option span {
+    color: #6a4f4b;
+    cursor: pointer;
+    text-decoration: underline;
+}
